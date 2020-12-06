@@ -13,16 +13,16 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [InboxFragment.newInstance] factory method to
+ * Use the [DraftFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InboxFragment : Fragment() {
+class DraftFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inbox, container, false)
+        return inflater.inflate(R.layout.fragment_draft, container, false)
     }
 }

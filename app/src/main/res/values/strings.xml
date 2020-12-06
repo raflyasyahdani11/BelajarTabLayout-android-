@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TabLayout</string>
-    <string name="frag1">Halaman Inbox</string>
+    <string name="frag2">Halaman Draft</string>
     <string name="nama_user">Rumondang Raflya Syahdani</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
