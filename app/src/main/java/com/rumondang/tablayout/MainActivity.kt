@@ -24,14 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         //viewPagerAdapter.tambahFragment(InboxFragment(), "Inbox")
         viewPagerAdapter.tambahFragment(DraftFragment(), "Draft")
-        // viewPagerAdapter.tambahFragment(SentFragment(), "Sent")
+        viewPagerAdapter.tambahFragment(SentFragment(), "Sent")
         viewPager.adapter = viewPagerAdapter
         tabLayout.setupWithViewPager(viewPager)
     }
-
-    internal class ViewPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(
-        fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
-    ) {
+    internal class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(
+        fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
         private val fragments: ArrayList<Fragment>
         private val juduls: ArrayList<String>
@@ -49,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             return fragments[position]
         }
 
-        fun tambahFragment(fragment: Fragment, judul: String) {
+        fun tambahFragment(fragment: Fragment, judul: String){
             fragments.add(fragment)
             juduls.add(judul)
         }
